@@ -41,8 +41,7 @@ app.get("/user/signin/callback", ({ query: { code } }, res) => {
 });
 // ③ ②で取得したtokenをaccessTokenに挿入してデータの取得をする
 app.get("/user", (req, res, next) => {
-  // const accessToken = "tokenの文字列をここに代入";
-  const accessToken = "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";
+  const accessToken = "tokenの文字列をここに代入";
 
   axios
     .get("https://api.github.com/user", {
